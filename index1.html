@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body> 
+    <div class="main">
+       <div class="R_form">
+       <h2>Registration Form</h2>
+            <form action="#" method="post">
+            <!-- Full Name  -->
+            <label for="fName"  class="bold-label">Full Name* :</label>
+            <br>
+            <input type="text" name="fName" id="fName" placeholder="Full Name" required minlength="3" maxlength="50">
+            <br><br>
+            <!-- Email -->
+            <label for="email"  class="bold-label">Email* :</label><br>
+            <input type="email" name="email" id="email" placeholder="example@domain.com" required>
+            <br><br>
+            <!-- Password -->
+            <label for="Password"  class="bold-label">Password* :</label>
+            <br>
+            <input type="password" name="psd" id="Password" required placeholder="Enter your password" required pattern="(?=.*\d)(?=.*[A-Z]).{6,}" title="Password must be at least 6 characters long, contain at least one number and one uppercase letter.">
+            <br><br>
+            <!-- Confirm Password -->
+            <label for="C-Password"  class="bold-label">Confirm Password* :</label>
+            <br>
+            <input type="password" name="C-psd" id="C-Password" required required placeholder="Re-enter your password">
+            <br><br>
+            <!-- Age -->
+            <label for="age"  class="bold-label">Age* :</label>
+            <br>
+            <input type="number" id="age" name="age" min="18" max="100" required>
+            <br><br>
+            <!-- Website -->
+            <label for="website"  class="bold-label">Website:</label>
+            <br>
+            <input type="url" id="website" name="website" placeholder="https://example.com" title="Please enter a valid URL">
+            <br><br>
+            
+            <!-- Gender -->
+            <label for="gender"  class="bold-label">Gender* :</label><br>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required> <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required> <label for="other">Other</label>
+                
+            </div>
+            <br>
+            
+
+            <!-- Hobbies -->
+            <label for="hobbies"  class="bold-label">Hobbies :</label>
+            <div class="hobbies">
+                <input type="checkbox" id="reading" name="hobbies" value="Reading"> <label for="reading">Reading</label>
+                <input type="checkbox" id="sports" name="hobbies" value="Sports"> <label for="sports">Sports</label>
+                <input type="checkbox" id="traveling" name="hobbies" value="Traveling"> <label for="traveling">Traveling</label>
+                <input type="checkbox" id="music" name="hobbies" value="Music"> <label for="music">Music</label>
+                <br>
+                <!-- Bio -->
+            <label for="bio"  class="bold-label">Bio* :</label>
+            <br>
+            <textarea id="bio" name="bio" placeholder="Tell us about yourself..." rows="4" maxlength="300" required></textarea>
+            </div>
+            <br>
+
+            
+            <!-- Terms and Conditions -->
+            <label for="terms"  class="bold-label">
+                <input type="checkbox" id="terms" name="terms" required>
+                I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a>
+                <br>
+            </label>
+            <br>
+            <!-- Submit Button -->
+            <input type="submit" value="Submit" name="submit" id="submit">
+        </div>
+        </div>
+    </form>
+</body>
+</html>

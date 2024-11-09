@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(245, 217, 231);
+    /* display: flex; */
+    
+  }
+
+nav{ 
+    height: 50px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+nav ul{
+    /* float: right; */
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    gap: 20px;
+    display: inline-flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+h1{
+    color:blue ;
+}
